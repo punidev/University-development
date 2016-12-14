@@ -1,0 +1,1 @@
+COM2,6,9600,2,MARK,0,0,Enable,Enable,Disable

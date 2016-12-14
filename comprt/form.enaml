@@ -1,0 +1,287 @@
+from enaml.widgets.api import Window, Label,FileDialogEx, CheckBox, Field, Form,Container, PushButton, Html, Window, ComboBox, Notebook, Page, CheckBox, Slider
+from enaml.stdlib.fields import IntField
+from enaml.layout.api import grid, hbox, align
+
+
+enamldef aForm(Form): form:
+    attr this
+    attr setport
+    attr ipath : unicode = u""
+    attr opath : unicode = u""
+    attr files
+    Container:
+        constraints = [
+            width == 900,
+            height==600
+        ]
+        Notebook: nbook:
+            tab_style = 'preferences'
+            Page:
+                title = 'Testing Overloadings'
+                closable = False
+                tool_tip = 'Testing Overloadings'
+                Container:
+                    constraints = [
+                        grid(
+                            [lb1,  lb1, lb1, lb1],
+                            [fl1,  fl1, fl1, fl1],
+                            [lb2,  lb2, lb2, lb2],
+                            [fl2,  fl2, fl2, fl2],
+                            [lb3,  lb3, lb3, lb3],
+                            [fl3,  fl3, fl3, fl3],
+                            [c1,  c2, c3, c4],
+                            [lb8,  lb8, lb8, lb8],
+                            [fl8,  fl8, fl8, fl8],
+                            [lb4,  cb4, cb4, cb4],
+                            [lb5,  cb5, cb5, cb5],
+                            [btn1, btn2,btn2,btn2],
+                            column_align='width',
+                            row_align='v_center',
+                        ),
+                    ]
+                    Label: lb1:
+                        text = 'Sending data'
+                    Field: fl1:
+                        text := this.GetSendData
+                    Label: lb2:
+                        text = 'Receiving data'
+                    Html:fl2:
+                        source << '%s<br>' % this.logTrace
+                        constraints = [width == 875, height==200]
+                    Label:lb3:
+                        text = 'Количество итераций: '
+                    IntField: fl3:
+                        minimum = 1
+                        value := this._iter
+                    CheckBox:c1:
+                        text = 'T/O Send 1 s'
+                        checked << this.timeout_s == 1
+                        toggled ::
+                            if checked:
+                                this.timeout_s == 1
+                            else:
+                                this.timeout_s == 0
+                    CheckBox:c2:
+                        text = 'T/O Send 2 s'
+                        checked << this.timeout_s == 2
+                        toggled ::
+                            if checked:
+                                this.timeout_s == 2
+                            else:
+                                this.timeout_s == 0
+                    CheckBox:c3:
+                        text = 'T/O Receive 1 s'
+                        checked << this.timeout_r == 1
+                        toggled ::
+                            if checked:
+                                this.timeout_r == 1
+                            else:
+                                this.timeout_r == 0
+                    CheckBox:c4:
+                        text = 'T/O Receive 2 s'
+                        checked << this.timeout_r == 2
+                        toggled ::
+                            if checked:
+                                this.timeout_r == 2
+                            else:
+                                this.timeout_r == 0
+                    Label:lb8:
+                        text = 'Скорость буфера: '
+                    IntField:fl8:
+                        minimum = 8
+                        value := this.bauds
+                    Label:lb4:
+                        text = 'COM-S'
+                    ComboBox:cb4:
+                         items = this.SerialPorts()
+                         editable = False
+                         selected_item >> this.portS
+                    Label:lb5:
+                        text = 'COM-R'
+                    ComboBox:cb5:
+                         items = this.SerialPorts()
+                         editable = False
+                         selected_item >> this.portR
+                    PushButton:btn1:
+                         text = 'Status'
+                         constraints = [width == 120]
+                         clicked :: setport.clear()
+                         clicked :: this.status()
+                    PushButton:btn2:
+                         text = 'Отправить'
+                         constraints = [width == 745]
+                         clicked :: this.TraceReceive()
+            Page:
+                title = 'Port Settings'
+                closable = False
+                tool_tip = 'settings'
+                Container:
+                    constraints = [
+                        grid(
+                            [slb1,  scb1, scb1, scb1],
+                            [slb2,  scb2, scb2, scb2],
+                            [slb3,  sfl3, sfl3, sfl3],
+                            [slb4,  scb4, scb4, scb4],
+                            [slb5,  scb5, scb5, scb5],
+                            [slb6,  sfl6, sfl6, sfl6],
+                            [slb7,  sfl7, sfl7, sfl7],
+
+                            [slb8,  scb8, scb8, scb8],
+                            [slb9,  scb9, scb9, scb9],
+                            [slb10,  scb10, scb10, scb10],
+                            [sbtn1, sbtn2, sbtn4, sbtn5],
+                            [sflh, sflh, sflh, sflh],
+                            [sbtn3, sbtn3, sbtn3, sbtn3],
+                            column_align='width',
+                            row_align='v_center',
+                        ),
+                        width == 875, height==560
+                    ]
+                    Label:slb1:
+                        text = 'COM-port'
+                    ComboBox:scb1:
+                         items = this.SerialPorts()
+                         editable = False
+                         selected_item >> setport.GetSPort
+                    Label:slb2:
+                        text = 'Byte Size:'
+                    ComboBox:scb2:
+                         items = setport.Bytes
+                         editable = False
+                         selected_item >> setport.bytesize
+                    Label:slb3:
+                        text = 'Baud speed: '
+                    IntField:sfl3:
+                        minimum = 50
+                        value := setport.bauds
+                    Label:slb4:
+                        text = 'Bit Stopper:'
+                    ComboBox:scb4:
+                         items = setport.Bits
+                         editable = False
+                         selected_item >> setport.bits
+                    Label:slb5:
+                        text = 'Parity:'
+                    ComboBox:scb5:
+                         items = setport.Paritys
+                         editable = False
+                         selected_item >> setport.parity
+                    Label:slb6:
+                        text = 'Timeout: '
+                    IntField:sfl6:
+                        minimum = 0
+                        value := setport.timeout
+                    Label:slb7:
+                        text = 'Write Timeout: '
+                    IntField:sfl7:
+                        minimum = 0
+                        value := setport.wtimeout
+                    Label:slb8:
+                        text = 'Software Flow control:'
+                    ComboBox:scb8:
+                         items = setport.Xonxoff
+                         editable = False
+                         selected_item >> setport.xonxoff
+                    Label:slb9:
+                        text = 'Hardware (RTS/CTS) Flow control:'
+                    ComboBox:scb9:
+                         items = setport.Rtscts
+                         editable = False
+                         selected_item >> setport.rtscts
+                    Label:slb10:
+                        text = 'Hardware (DSR/DTR) Flow control:'
+                    ComboBox:scb10:
+                         items = setport.Dsrdtr
+                         editable = False
+                         selected_item >> setport.dsrdtr
+                    PushButton:sbtn1:
+                        text ='Save pointer'
+                        clicked :: setport.InitialPort()
+                    PushButton:sbtn2:
+                        text ='Show defaults'
+                        clicked :: setport.Defaults()
+                    Html:sflh:
+                        source << '%s<br>' % setport.logTrace
+                        constraints = [height==130]
+                    PushButton:sbtn3:
+                        text ='Clear logs'
+                        clicked :: setport.clear()
+                    PushButton: sbtn4:
+                        text = 'Save file'
+                        constraints = [width==130]
+                        clicked ::
+                            o1path = FileDialogEx.get_save_file_name(form)
+                            setport.SaveportSettings(o1path)
+                    PushButton: sbtn5:
+                        constraints = [width==130]
+                        text = 'Load file'
+                        clicked ::
+                            i1path = FileDialogEx.get_open_file_name(form)
+                            setport.OpenportSettings(i1path)
+            Page: baz:
+                title = 'File Sender'
+                closable = False
+                tool_tip = 'settings'
+                Container:
+                    constraints = [
+                        grid(
+                            [flbl,  ffld1, ffld1, fbtn1],
+                            [flb2,  ffld2, ffld2, fbtn2],
+
+                            [flb4, flb4, fcb4, fcb4],
+                            [flb5, flb5, fcb5, fcb5],
+                            [fbtn3, fbtn3, fbtn3, fbtn3],
+                            column_align='width',
+                            row_align='v_center',
+                        ),
+                        width == 875, height==560
+                    ]
+                    Label: flbl:
+                        text = 'Input File: '
+                    Field: ffld1:
+                        read_only = True
+                        text << form.ipath
+                    PushButton: fbtn1:
+                        text = 'Open'
+                        clicked ::
+                            ipath = FileDialogEx.get_open_file_name(form)
+                            if ipath:
+                                form.ipath = ipath
+                    Label: flb2:
+                        text = 'Output File: '
+                    Field: ffld2:
+                        read_only = True
+                        text << form.opath
+                    PushButton: fbtn2:
+                        text = 'Open'
+                        clicked ::
+                            opath = FileDialogEx.get_open_file_name(form)
+                            if opath:
+                                form.opath = opath
+                    Label:flb4:
+                        text = 'COM-S'
+                    ComboBox:fcb4:
+                         items = this.SerialPorts()
+                         editable = False
+                         selected_item >> files.ports
+                    Label:flb5:
+                        text = 'COM-R'
+                    ComboBox:fcb5:
+                         items = this.SerialPorts()
+                         editable = False
+                         selected_item >> files.portr
+
+                    PushButton: fbtn3:
+                        text = 'Send'
+                        clicked :: files.fStream(form.ipath, form.opath)
+
+enamldef MainForm(Window):
+    attr this
+    attr setport
+    attr files
+    title << "RS-232 Tracer"
+    aForm:
+        this := parent.this
+        setport := parent.setport
+        files := parent.files
+
