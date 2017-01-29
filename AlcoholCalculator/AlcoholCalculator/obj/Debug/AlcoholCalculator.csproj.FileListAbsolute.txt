@@ -1,0 +1,6 @@
+D:\Proj\Csharp\AlcoholCalculator\AlcoholCalculator\bin\Debug\AlcoholCalculator.exe.config
+D:\Proj\Csharp\AlcoholCalculator\AlcoholCalculator\bin\Debug\AlcoholCalculator.exe
+D:\Proj\Csharp\AlcoholCalculator\AlcoholCalculator\bin\Debug\AlcoholCalculator.pdb
+D:\Proj\Csharp\AlcoholCalculator\AlcoholCalculator\obj\Debug\AlcoholCalculator.csprojResolveAssemblyReference.cache
+D:\Proj\Csharp\AlcoholCalculator\AlcoholCalculator\obj\Debug\AlcoholCalculator.exe
+D:\Proj\Csharp\AlcoholCalculator\AlcoholCalculator\obj\Debug\AlcoholCalculator.pdb
