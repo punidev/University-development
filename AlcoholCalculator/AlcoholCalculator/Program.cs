@@ -6,11 +6,14 @@ namespace AlcoholCalculator
 {
     internal class Program
     {
-        public static List<User.UserUtils> Items = new List<User.UserUtils>();
-        public static List<User.UserUtils> NItems = new List<User.UserUtils>();
+        public static List<User.UserUtils> Items;
+        public static List<User.UserUtils> NItems;
 
         public static void FindAlc(int weight)
         {
+            Items = new List<User.UserUtils>();
+            NItems = new List<User.UserUtils>();
+            User.UserUtils.Items.Clear();
             foreach (var t in Coctails.list)
             {
                 User.UserUtils.Items.Add(new User.UserUtils
@@ -23,7 +26,6 @@ namespace AlcoholCalculator
                     Cost = t.Cost
                 });
             }
-            Items = User.UserUtils.Items.OrderBy(a => -a.Promille).ThenBy(a => a.Cost).ToList();
 
             int key = Convert.ToInt32(Console.ReadLine());
             A(key, weight);
@@ -32,7 +34,10 @@ namespace AlcoholCalculator
 
         public static void A(int a, int weight)
         {
+        
             List<Alcohol> values = new List<Alcohol>();
+            Items.Clear();
+            Items = User.UserUtils.Items.OrderBy(s => -s.Promille).ThenBy(s => s.Cost).ToList();
             int quant = 0, cost = 0;
             foreach (var t in Items)
             {
@@ -60,6 +65,7 @@ namespace AlcoholCalculator
                 t => t.Alco*t.Part/NItems.Count));
             User.DisAssembly(values, t => t.Alco > 0);
             Console.WriteLine("Сумма коктейлей: " + cost);
+
         }
 
         public static void OrdinaryCount()

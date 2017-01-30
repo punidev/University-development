@@ -4,3 +4,9 @@ D:\Proj\Csharp\AlcoholCalculator\AlcoholCalculator\bin\Debug\AlcoholCalculator.p
 D:\Proj\Csharp\AlcoholCalculator\AlcoholCalculator\obj\Debug\AlcoholCalculator.csprojResolveAssemblyReference.cache
 D:\Proj\Csharp\AlcoholCalculator\AlcoholCalculator\obj\Debug\AlcoholCalculator.exe
 D:\Proj\Csharp\AlcoholCalculator\AlcoholCalculator\obj\Debug\AlcoholCalculator.pdb
+D:\repository\projects\punidev\University-development\AlcoholCalculator\AlcoholCalculator\bin\Debug\AlcoholCalculator.exe.config
+D:\repository\projects\punidev\University-development\AlcoholCalculator\AlcoholCalculator\bin\Debug\AlcoholCalculator.exe
+D:\repository\projects\punidev\University-development\AlcoholCalculator\AlcoholCalculator\bin\Debug\AlcoholCalculator.pdb
+D:\repository\projects\punidev\University-development\AlcoholCalculator\AlcoholCalculator\obj\Debug\AlcoholCalculator.csprojResolveAssemblyReference.cache
+D:\repository\projects\punidev\University-development\AlcoholCalculator\AlcoholCalculator\obj\Debug\AlcoholCalculator.exe
+D:\repository\projects\punidev\University-development\AlcoholCalculator\AlcoholCalculator\obj\Debug\AlcoholCalculator.pdb
