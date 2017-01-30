@@ -9,8 +9,12 @@ namespace AlcoholCalculator
         public static List<User.UserUtils> Items;
         public static List<User.UserUtils> NItems;
 
-        public static void FindAlc(int weight)
+        public static void FindAlc()
         {
+            Console.Write("Введите сумму: ");
+            int key = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите вес: ");
+            int weight = Convert.ToInt32(Console.ReadLine());
             Items = new List<User.UserUtils>();
             NItems = new List<User.UserUtils>();
             User.UserUtils.Items.Clear();
@@ -26,8 +30,6 @@ namespace AlcoholCalculator
                     Cost = t.Cost
                 });
             }
-
-            int key = Convert.ToInt32(Console.ReadLine());
             A(key, weight);
         }
 
@@ -145,7 +147,7 @@ namespace AlcoholCalculator
                         OrdinaryCount();
                         break;
                     case "3":
-                        FindAlc(65);
+                        FindAlc();
                         break;
                     case "4":
                         ShowAll();
