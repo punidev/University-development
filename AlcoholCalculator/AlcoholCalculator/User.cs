@@ -1,4 +1,4 @@
-using System;
+п»їusing System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -24,18 +24,18 @@ namespace AlcoholCalculator
         {
             if (action != null)
             {
-                Console.WriteLine("Только алкогольные напитки: ");
+                Console.WriteLine("РўРѕР»СЊРєРѕ Р°Р»РєРѕРіРѕР»СЊРЅС‹Рµ РЅР°РїРёС‚РєРё: ");
                 foreach (var t in lst.Where(action).OrderBy(t=>t.Name).ToList())
                 {
-                    Console.WriteLine("Название - {0} : Крепкость - {1}% : Доля в коктейле - {2}", t.Name, t.Alco*100, t.Part);
+                    Console.WriteLine("РќР°Р·РІР°РЅРёРµ - {0} : РљСЂРµРїРєРѕСЃС‚СЊ - {1}% : Р”РѕР»СЏ РІ РєРѕРєС‚РµР№Р»Рµ - {2}", t.Name, t.Alco*100, t.Part);
                 }
             }
             else
             {
-                Console.WriteLine("Все напитки напитки: ");
+                Console.WriteLine("Р’СЃРµ РЅР°РїРёС‚РєРё РЅР°РїРёС‚РєРё: ");
                 foreach (var t in lst)
                 {
-                    Console.WriteLine("Название - {0} : Крепкость - {1}% : Доля в коктейле - {2}", t.Name, t.Alco*100, t.Part);
+                    Console.WriteLine("РќР°Р·РІР°РЅРёРµ - {0} : РљСЂРµРїРєРѕСЃС‚СЊ - {1}% : Р”РѕР»СЏ РІ РєРѕРєС‚РµР№Р»Рµ - {2}", t.Name, t.Alco*100, t.Part);
                 }
             }
         }
@@ -51,7 +51,7 @@ namespace AlcoholCalculator
             public int Cost { get; set; }
             public override string ToString()
             {
-                return string.Format("{0} | {1} мл., промилле = {2}, цена: {3} грн.", Name, Quantity, Promille, Cost);
+                return string.Format("{0} | {1} РјР»., РїСЂРѕРјРёР»Р»Рµ = {2}, С†РµРЅР°: {3} РіСЂРЅ.", Name, Quantity, Promille, Cost);
             }
         }
 
@@ -61,17 +61,17 @@ namespace AlcoholCalculator
             string res = null;
 
             if (d >= 0 && d < 1.0)
-                res = "Норма";
+                res = "РќРѕСЂРјР°";
             if (d >= 1.0 && d < 2.0)
-                res = "Легкая степень";
+                res = "Р›РµРіРєР°СЏ СЃС‚РµРїРµРЅСЊ";
             if (d >= 2.0 && d < 3.0)
-                res = "Средняя степень";
+                res = "РЎСЂРµРґРЅСЏСЏ СЃС‚РµРїРµРЅСЊ";
             if (d >= 3.0 && d < 4.0)
-                res = "Тяжелая степень";
+                res = "РўСЏР¶РµР»Р°СЏ СЃС‚РµРїРµРЅСЊ";
             if (d >= 4.0)
-                res = "Cмертельная степень";
+                res = "CРјРµСЂС‚РµР»СЊРЅР°СЏ СЃС‚РµРїРµРЅСЊ";
 
-            Console.WriteLine("Ваша доза = {0} ‰\n{1} опъянения.", d, res);
+            Console.WriteLine("Р’Р°С€Р° РґРѕР·Р° = {0} вЂ°\n{1} РѕРїСЉСЏРЅРµРЅРёСЏ.", d, res);
         }
     }
 }

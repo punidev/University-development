@@ -1,4 +1,4 @@
-namespace AlcoholCalculator
+﻿namespace AlcoholCalculator
 {
     internal class Alcohol
     {

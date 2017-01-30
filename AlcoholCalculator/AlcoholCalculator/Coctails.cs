@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+п»їusing System.Collections.Generic;
 
 namespace AlcoholCalculator
 {
@@ -11,7 +11,7 @@ namespace AlcoholCalculator
 
         //public static Coctails OtvertkaCoctails = new Coctails
         //{
-        //    Name = "Отвёртка",
+        //    Name = "РћС‚РІС‘СЂС‚РєР°",
         //    Ingredients = Otvertka,
         //    Quantity = 200,
         //    Cost = 30
@@ -19,28 +19,28 @@ namespace AlcoholCalculator
 
         public static Coctails GrMexicanCoctails = new Coctails
         {
-            Name = "Зелёный мексиканец",
+            Name = "Р—РµР»С‘РЅС‹Р№ РјРµРєСЃРёРєР°РЅРµС†",
             Ingredients = GreenMexican,
             Quantity = 60,
             Cost = 35
         };
         public static Coctails GlMexicanCoctails = new Coctails
         {
-            Name = "Золотой мексиканец",
+            Name = "Р—РѕР»РѕС‚РѕР№ РјРµРєСЃРёРєР°РЅРµС†",
             Ingredients = GoldMexican,
             Quantity = 60,
             Cost = 35
         };
         public static Coctails HirosimaCoctails = new Coctails
         {
-            Name = "Хиросима",
+            Name = "РҐРёСЂРѕСЃРёРјР°",
             Ingredients = Hirosima,
             Quantity = 55,
             Cost = 35
         };
         public static Coctails GoldmilkCoctails = new Coctails
         {
-            Name = "Голд милк",
+            Name = "Р“РѕР»Рґ РјРёР»Рє",
             Ingredients = GoldMilk,
             Quantity = 55,
             Cost = 45
@@ -48,7 +48,7 @@ namespace AlcoholCalculator
 
         public static Coctails LobotomiyaCoctails = new Coctails
         {
-            Name = "Лоботомия",
+            Name = "Р›РѕР±РѕС‚РѕРјРёСЏ",
             Ingredients = Lobotomiya,
             Quantity = 50,
             Cost = 40
@@ -56,7 +56,7 @@ namespace AlcoholCalculator
 
         public static Coctails ReddogCoctails = new Coctails
         {
-            Name = "Рыжая собака",
+            Name = "Р С‹Р¶Р°СЏ СЃРѕР±Р°РєР°",
             Ingredients = RedDog,
             Quantity = 50,
             Cost = 40
@@ -64,7 +64,7 @@ namespace AlcoholCalculator
 
         public static Coctails TequilahotCoctails = new Coctails
         {
-            Name = "Текила Хот",
+            Name = "РўРµРєРёР»Р° РҐРѕС‚",
             Ingredients = TequilaHot,
             Quantity = 50,
             Cost = 40
@@ -72,7 +72,7 @@ namespace AlcoholCalculator
 
         public static Coctails ChihuahuaCoctails = new Coctails
         {
-            Name = "Чихуа-хуа",
+            Name = "Р§РёС…СѓР°-С…СѓР°",
             Ingredients = Chihuahua,
             Quantity = 55,
             Cost = 40
@@ -80,7 +80,7 @@ namespace AlcoholCalculator
 
         public static Coctails B53Coctails = new Coctails
         {
-            Name = "Б-53",
+            Name = "Р‘-53",
             Ingredients = B53,
             Quantity = 50,
             Cost = 35
@@ -88,7 +88,7 @@ namespace AlcoholCalculator
 
         public static Coctails B52Coctails = new Coctails
         {
-            Name = "Б-52",
+            Name = "Р‘-52",
             Ingredients = B52,
             Quantity = 50,
             Cost = 35
@@ -96,7 +96,7 @@ namespace AlcoholCalculator
 
         public static Coctails DirtyMamaCoctails = new Coctails
         {
-            Name = "Грязная мама",
+            Name = "Р“СЂСЏР·РЅР°СЏ РјР°РјР°",
             Ingredients = DirtyMama,
             Quantity = 50,
             Cost = 35
@@ -104,7 +104,7 @@ namespace AlcoholCalculator
 
         public static Coctails MadBecherCoctails = new Coctails
         {
-            Name = "Бешеный бехер",
+            Name = "Р‘РµС€РµРЅС‹Р№ Р±РµС…РµСЂ",
             Ingredients = MadBecher,
             Quantity = 50,
             Cost = 35
@@ -112,7 +112,7 @@ namespace AlcoholCalculator
 
         public static Coctails NeboIrakaCoctails = new Coctails
         {
-            Name = "Небо Ирака",
+            Name = "РќРµР±Рѕ РСЂР°РєР°",
             Ingredients = NeboIraka,
             Quantity = 50,
             Cost = 35
@@ -120,14 +120,14 @@ namespace AlcoholCalculator
 
         public static Coctails ElectronachosCoctails = new Coctails
         {
-            Name = "Электроначос",
+            Name = "Р­Р»РµРєС‚СЂРѕРЅР°С‡РѕСЃ",
             Ingredients = ElectroNachos,
             Quantity = 50,
             Cost = 35
         };
         public static Coctails BMWCoctails = new Coctails
         {
-            Name = "БМВ",
+            Name = "Р‘РњР’",
             Ingredients = Bmw,
             Quantity = 50,
             Cost = 35
@@ -135,7 +135,7 @@ namespace AlcoholCalculator
 
         public static Coctails SpermbankCoctails = new Coctails
         {
-            Name = "Банк спермы",
+            Name = "Р‘Р°РЅРє СЃРїРµСЂРјС‹",
             Ingredients = SpermBank,
             Quantity = 50,
             Cost = 35
@@ -143,76 +143,76 @@ namespace AlcoholCalculator
 
         public static Coctails MolotovCoctails = new Coctails
         {
-            Name = "Молотов",
+            Name = "РњРѕР»РѕС‚РѕРІ",
             Ingredients = Molotov,
             Quantity = 50,
             Cost = 35
         };
         public static Coctails KomaCoctails = new Coctails
         {
-            Name = "Кома",
+            Name = "РљРѕРјР°",
             Ingredients = Koma,
             Quantity = 50,
             Cost = 30
         };
         public static Coctails HeyJhoeCoctails = new Coctails
         {
-            Name = "Эй Джо",
+            Name = "Р­Р№ Р”Р¶Рѕ",
             Ingredients = HeyJhoe,
             Quantity = 50,
             Cost = 30
         };
         public static Coctails StelsCoctails = new Coctails
         {
-            Name = "Стелс",
+            Name = "РЎС‚РµР»СЃ",
             Ingredients = Stels,
             Quantity = 50,
             Cost = 30
         };
         public static Coctails MedusaCoctails = new Coctails
         {
-            Name = "Медуза",
+            Name = "РњРµРґСѓР·Р°",
             Ingredients = Medusa,
             Quantity = 60,
             Cost = 30
         };
         public static Coctails DoubleradaCoctails = new Coctails
         {
-            Name = "Дабл Рада",
+            Name = "Р”Р°Р±Р» Р Р°РґР°",
             Ingredients = DoubleRada,
             Quantity = 50,
             Cost = 30
         };
         public static Coctails AudiCoctails = new Coctails
         {
-            Name = "Ауди",
+            Name = "РђСѓРґРё",
             Ingredients = Audi,
             Quantity = 60,
             Cost = 30
         }; public static Coctails ChikaCoctails = new Coctails
         {
-            Name = "Чика",
+            Name = "Р§РёРєР°",
             Ingredients = Chika,
             Quantity = 50,
             Cost = 30
         };
         public static Coctails DyadyavanyaCoctails = new Coctails
         {
-            Name = "Дядя Ваня",
+            Name = "Р”СЏРґСЏ Р’Р°РЅСЏ",
             Ingredients = DyadyaVanya,
             Quantity = 50,
             Cost = 30
         };
         public static Coctails SvalaUkraineCoctails = new Coctails
         {
-            Name = "Слава Украине",
+            Name = "РЎР»Р°РІР° РЈРєСЂР°РёРЅРµ",
             Ingredients = SlavaUkraine,
             Quantity = 50,
             Cost = 30
         };
         public static Coctails PrecursorCoctails = new Coctails
         {
-            Name = "Прекурсор",
+            Name = "РџСЂРµРєСѓСЂСЃРѕСЂ",
             Ingredients = Precursor,
             Quantity = 50,
             Cost = 30

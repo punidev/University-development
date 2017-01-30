@@ -1,36 +1,36 @@
-using System.Collections.Generic;
+п»їusing System.Collections.Generic;
 
 namespace AlcoholCalculator
 {
     internal class Ingredient : Alcohol
     {
         #region Non-alcoholic
-        public static Alcohol Juice = new Alcohol("Сок", 0.0, 1);
-        public static Alcohol Limefresh = new Alcohol("Лимонный фреш", 0.0, 1);
-        public static Alcohol LimeJuice = new Alcohol("Лайм джус", 0.0, 1);
-        public static Alcohol Grenadine = new Alcohol("Гренадин", 0.0, 1);
-        public static Alcohol Espresso = new Alcohol("Эспрессо кофе", 0.0, 1);
-        public static Alcohol Tobasco = new Alcohol("Тобаско", 0.0, 1);
-        public static Alcohol Mint = new Alcohol("Мятный ликер", 0.0, 1);
-        public static Alcohol OrangeJuice = new Alcohol("Апельсиновый сок", 0.0, 1);
+        public static Alcohol Juice = new Alcohol("РЎРѕРє", 0.0, 1);
+        public static Alcohol Limefresh = new Alcohol("Р›РёРјРѕРЅРЅС‹Р№ С„СЂРµС€", 0.0, 1);
+        public static Alcohol LimeJuice = new Alcohol("Р›Р°Р№Рј РґР¶СѓСЃ", 0.0, 1);
+        public static Alcohol Grenadine = new Alcohol("Р“СЂРµРЅР°РґРёРЅ", 0.0, 1);
+        public static Alcohol Espresso = new Alcohol("Р­СЃРїСЂРµСЃСЃРѕ РєРѕС„Рµ", 0.0, 1);
+        public static Alcohol Tobasco = new Alcohol("РўРѕР±Р°СЃРєРѕ", 0.0, 1);
+        public static Alcohol Mint = new Alcohol("РњСЏС‚РЅС‹Р№ Р»РёРєРµСЂ", 0.0, 1);
+        public static Alcohol OrangeJuice = new Alcohol("РђРїРµР»СЊСЃРёРЅРѕРІС‹Р№ СЃРѕРє", 0.0, 1);
         #endregion
         #region Alcoholic
-        public static Alcohol Vodka = new Alcohol("Водка", 0.4, 1);
-        public static Alcohol PisangAmbon = new Alcohol("Пизан Амбон", 0.21, 1);
-        public static Alcohol Tequila = new Alcohol("Текила", 0.38, 1);
-        public static Alcohol Absinthe = new Alcohol("Абсент", 0.6, 1);
-        public static Alcohol Baylis = new Alcohol("Бейлиз", 0.17, 1);
-        public static Alcohol Sambuca = new Alcohol("Самбука", 0.41, 1);
-        public static Alcohol Goldstrike = new Alcohol("Голд страйк", 0.5, 1);
-        public static Alcohol Tripplesec = new Alcohol("Трипл сек", 0.4, 1);
-        public static Alcohol Kahlua = new Alcohol("Калуа", 0.2, 1);
-        public static Alcohol Becherovka = new Alcohol("Бехеровка", 0.38, 1);
-        public static Alcohol Jamesson = new Alcohol("Джемиссон", 0.4, 1);
-        public static Alcohol Malibu = new Alcohol("Малибу", 0.21, 1);
-        public static Alcohol Rum = new Alcohol("Ром", 0.4, 1);
-        public static Alcohol BlueCurasao = new Alcohol("Блю Курасао", 0.2, 1);
-        public static Alcohol Gin = new Alcohol("Джин", 0.45, 1);
-        public static Alcohol Aperol = new Alcohol("Апероль", 0.11, 1);
+        public static Alcohol Vodka = new Alcohol("Р’РѕРґРєР°", 0.4, 1);
+        public static Alcohol PisangAmbon = new Alcohol("РџРёР·Р°РЅ РђРјР±РѕРЅ", 0.21, 1);
+        public static Alcohol Tequila = new Alcohol("РўРµРєРёР»Р°", 0.38, 1);
+        public static Alcohol Absinthe = new Alcohol("РђР±СЃРµРЅС‚", 0.6, 1);
+        public static Alcohol Baylis = new Alcohol("Р‘РµР№Р»РёР·", 0.17, 1);
+        public static Alcohol Sambuca = new Alcohol("РЎР°РјР±СѓРєР°", 0.41, 1);
+        public static Alcohol Goldstrike = new Alcohol("Р“РѕР»Рґ СЃС‚СЂР°Р№Рє", 0.5, 1);
+        public static Alcohol Tripplesec = new Alcohol("РўСЂРёРїР» СЃРµРє", 0.4, 1);
+        public static Alcohol Kahlua = new Alcohol("РљР°Р»СѓР°", 0.2, 1);
+        public static Alcohol Becherovka = new Alcohol("Р‘РµС…РµСЂРѕРІРєР°", 0.38, 1);
+        public static Alcohol Jamesson = new Alcohol("Р”Р¶РµРјРёСЃСЃРѕРЅ", 0.4, 1);
+        public static Alcohol Malibu = new Alcohol("РњР°Р»РёР±Сѓ", 0.21, 1);
+        public static Alcohol Rum = new Alcohol("Р РѕРј", 0.4, 1);
+        public static Alcohol BlueCurasao = new Alcohol("Р‘Р»СЋ РљСѓСЂР°СЃР°Рѕ", 0.2, 1);
+        public static Alcohol Gin = new Alcohol("Р”Р¶РёРЅ", 0.45, 1);
+        public static Alcohol Aperol = new Alcohol("РђРїРµСЂРѕР»СЊ", 0.11, 1);
         #endregion
         public static List<Alcohol> Otvertka = new List<Alcohol>
         {
