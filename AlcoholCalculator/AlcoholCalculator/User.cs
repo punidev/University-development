@@ -27,7 +27,7 @@ namespace AlcoholCalculator
                 Console.WriteLine("Только алкогольные напитки: ");
                 foreach (var t in lst.Where(action).OrderBy(t=>t.Name).ToList())
                 {
-                    Console.WriteLine("{0} : {1} : {2}", t.Name, t.Alco, t.Part);
+                    Console.WriteLine("Название - {0} : Крепкость - {1}% : Доля в коктейле - {2}", t.Name, t.Alco*100, t.Part);
                 }
             }
             else
@@ -35,7 +35,7 @@ namespace AlcoholCalculator
                 Console.WriteLine("Все напитки напитки: ");
                 foreach (var t in lst)
                 {
-                    Console.WriteLine("{0} : {1} : {2}", t.Name, t.Alco, t.Part);
+                    Console.WriteLine("Название - {0} : Крепкость - {1}% : Доля в коктейле - {2}", t.Name, t.Alco*100, t.Part);
                 }
             }
         }
