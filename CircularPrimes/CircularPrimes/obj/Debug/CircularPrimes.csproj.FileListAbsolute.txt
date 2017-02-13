@@ -1,0 +1,5 @@
+D:\Proj\Csharp\CircularPrimes\CircularPrimes\bin\Debug\CircularPrimes.exe.config
+D:\Proj\Csharp\CircularPrimes\CircularPrimes\bin\Debug\CircularPrimes.exe
+D:\Proj\Csharp\CircularPrimes\CircularPrimes\bin\Debug\CircularPrimes.pdb
+D:\Proj\Csharp\CircularPrimes\CircularPrimes\obj\Debug\CircularPrimes.exe
+D:\Proj\Csharp\CircularPrimes\CircularPrimes\obj\Debug\CircularPrimes.pdb
