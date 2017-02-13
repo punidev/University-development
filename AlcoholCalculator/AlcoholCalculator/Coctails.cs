@@ -21,28 +21,28 @@ namespace AlcoholCalculator
         {
             Name = "Зелёный мексиканец",
             Ingredients = GreenMexican,
-            Quantity = 60,
+            Quantity = 50,
             Cost = 35
         };
         public static Coctails GlMexicanCoctails = new Coctails
         {
             Name = "Золотой мексиканец",
             Ingredients = GoldMexican,
-            Quantity = 60,
+            Quantity = 50,
             Cost = 35
         };
         public static Coctails HirosimaCoctails = new Coctails
         {
             Name = "Хиросима",
             Ingredients = Hirosima,
-            Quantity = 55,
+            Quantity = 50,
             Cost = 35
         };
         public static Coctails GoldmilkCoctails = new Coctails
         {
             Name = "Голд милк",
             Ingredients = GoldMilk,
-            Quantity = 55,
+            Quantity = 50,
             Cost = 45
         };
 
@@ -74,7 +74,7 @@ namespace AlcoholCalculator
         {
             Name = "Чихуа-хуа",
             Ingredients = Chihuahua,
-            Quantity = 55,
+            Quantity = 50,
             Cost = 40
         };
 
@@ -173,7 +173,7 @@ namespace AlcoholCalculator
         {
             Name = "Медуза",
             Ingredients = Medusa,
-            Quantity = 60,
+            Quantity = 50,
             Cost = 30
         };
         public static Coctails DoubleradaCoctails = new Coctails
@@ -187,7 +187,7 @@ namespace AlcoholCalculator
         {
             Name = "Ауди",
             Ingredients = Audi,
-            Quantity = 60,
+            Quantity = 50,
             Cost = 30
         }; public static Coctails ChikaCoctails = new Coctails
         {

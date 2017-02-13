@@ -1,0 +1,6 @@
+D:\Proj\Csharp\TriangleEulerMethod\TriangleEulerMethod\bin\Debug\TriangleEulerMethod.exe.config
+D:\Proj\Csharp\TriangleEulerMethod\TriangleEulerMethod\bin\Debug\TriangleEulerMethod.exe
+D:\Proj\Csharp\TriangleEulerMethod\TriangleEulerMethod\bin\Debug\TriangleEulerMethod.pdb
+D:\Proj\Csharp\TriangleEulerMethod\TriangleEulerMethod\obj\Debug\TriangleEulerMethod.csprojResolveAssemblyReference.cache
+D:\Proj\Csharp\TriangleEulerMethod\TriangleEulerMethod\obj\Debug\TriangleEulerMethod.exe
+D:\Proj\Csharp\TriangleEulerMethod\TriangleEulerMethod\obj\Debug\TriangleEulerMethod.pdb

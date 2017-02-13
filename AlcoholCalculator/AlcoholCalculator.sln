@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlcoholCalculator", "AlcoholCalculator\AlcoholCalculator.csproj", "{5E99DE3D-7DC2-4982-B321-45C96B98521E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlcoLib", "ClassLibrary1\AlcoLib.csproj", "{ABFCA87F-30F5-4D8C-B92A-3DCEDB283892}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5E99DE3D-7DC2-4982-B321-45C96B98521E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E99DE3D-7DC2-4982-B321-45C96B98521E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E99DE3D-7DC2-4982-B321-45C96B98521E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABFCA87F-30F5-4D8C-B92A-3DCEDB283892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABFCA87F-30F5-4D8C-B92A-3DCEDB283892}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABFCA87F-30F5-4D8C-B92A-3DCEDB283892}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABFCA87F-30F5-4D8C-B92A-3DCEDB283892}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
