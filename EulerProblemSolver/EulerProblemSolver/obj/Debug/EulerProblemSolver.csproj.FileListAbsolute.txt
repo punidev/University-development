@@ -4,3 +4,9 @@ D:\Proj\Csharp\EulerProblemSolver\EulerProblemSolver\bin\Debug\EulerProblemSolve
 D:\Proj\Csharp\EulerProblemSolver\EulerProblemSolver\obj\Debug\EulerProblemSolver.csprojResolveAssemblyReference.cache
 D:\Proj\Csharp\EulerProblemSolver\EulerProblemSolver\obj\Debug\EulerProblemSolver.exe
 D:\Proj\Csharp\EulerProblemSolver\EulerProblemSolver\obj\Debug\EulerProblemSolver.pdb
+D:\repository\projects\punidev\University-development\EulerProblemSolver\EulerProblemSolver\bin\Debug\EulerProblemSolver.exe.config
+D:\repository\projects\punidev\University-development\EulerProblemSolver\EulerProblemSolver\bin\Debug\EulerProblemSolver.exe
+D:\repository\projects\punidev\University-development\EulerProblemSolver\EulerProblemSolver\bin\Debug\EulerProblemSolver.pdb
+D:\repository\projects\punidev\University-development\EulerProblemSolver\EulerProblemSolver\obj\Debug\EulerProblemSolver.csprojResolveAssemblyReference.cache
+D:\repository\projects\punidev\University-development\EulerProblemSolver\EulerProblemSolver\obj\Debug\EulerProblemSolver.exe
+D:\repository\projects\punidev\University-development\EulerProblemSolver\EulerProblemSolver\obj\Debug\EulerProblemSolver.pdb

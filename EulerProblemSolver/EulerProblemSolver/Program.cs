@@ -58,7 +58,8 @@ namespace EulerProblemSolver
             {
                 using (StreamWriter sw = new StreamWriter("tasks.txt"))
                 {
-                    foreach (var t in Data.Items.OrderBy(s => -s.Solved))
+                    foreach (var t in Data.Items.Where(s => s.Number < 481).OrderBy(s => s.Solved).ThenBy(s => s.Number)
+                        )
                     {
                         sw.WriteLine(t.ToString());
                     }
