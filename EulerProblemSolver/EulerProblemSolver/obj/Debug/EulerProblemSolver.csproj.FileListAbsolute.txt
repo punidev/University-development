@@ -1,0 +1,6 @@
+D:\Proj\Csharp\EulerProblemSolver\EulerProblemSolver\bin\Debug\EulerProblemSolver.exe.config
+D:\Proj\Csharp\EulerProblemSolver\EulerProblemSolver\bin\Debug\EulerProblemSolver.exe
+D:\Proj\Csharp\EulerProblemSolver\EulerProblemSolver\bin\Debug\EulerProblemSolver.pdb
+D:\Proj\Csharp\EulerProblemSolver\EulerProblemSolver\obj\Debug\EulerProblemSolver.csprojResolveAssemblyReference.cache
+D:\Proj\Csharp\EulerProblemSolver\EulerProblemSolver\obj\Debug\EulerProblemSolver.exe
+D:\Proj\Csharp\EulerProblemSolver\EulerProblemSolver\obj\Debug\EulerProblemSolver.pdb
